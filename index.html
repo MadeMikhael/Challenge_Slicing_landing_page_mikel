@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContestX</title>
+    <link href="src/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body class="bg-secondary">
+    
+    <!-- header start -->
+
+    <header id="navbar" class="fixed top-0 z-50 bg-[#FFF8F8] w-full items-center duration-300">
+        <div class="container mx-auto w-[90%]">
+            <div class="relative mx-auto flex items-center justify-between">
+                <div class="">
+                    <a href="" class="block py-6 text-base font-bold md:text-xl lg:text-2xl xl:text-xl">ContestX</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="hamburger" type="button" class="absolute right-0 block sm:hidden invert">
+                        <img src="img/hamburger.svg" alt="" class="" />
+                    </button>
+                    <nav id="nav-menu"
+                        class="fixed nav transition-transform duration-300 -translate-y-full left-0 top-0 bottom-0 h-full z-50  w-full sm:translate-y-0 sm:duration-0 bg-white py-4 shadow-lg sm:static sm:h-auto sm:block sm:w-full sm:rounded-none sm:bg-opacity-0 md:text-xs sm:shadow-none xl:md:text-sm ">
+                        <ul class="mt-10 sm:mt-0 block sm:flex md:font-semibold">
+                            <li class="group">
+                                <a href="#home" class="nav-class">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#service" class="nav-class">Kategori Lomba</a>
+                            </li>
+                            <li class="group">
+                                <a href="#lapangan" class="nav-class">Lomba Terbaru</a>
+                            </li>
+                            <li class="group">
+                                <a href="#galeri" class="nav-class">Testimoni</a>
+                            </li>
+                            <button id="hamburgers" type="button"
+                                class="absolute top-6 right-11 mx-auto z-50 block sm:hidden invert">
+                                <i class="ri-close-large-fill text-[#7286D3] text-lg p-2"></i>
+                            </button>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="hidden md:flex items-center xl:gap-0 xl:mr-0">
+                    <div class="lg:my-0 md:my-4 xl:my-0 xl:mr-0 ">
+                    <a href="#menu"
+                        class="scale inline-block rounded-md border-2 text-white border-primary bg-primary px-3 py-1 text-[8px] font-medium sm:py-2 sm:text-xs md:px-6 md:text-xs lg:py-3 xl:py-1.5 xl:rounded-md xl:text-[12px]">Lihat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </header>
+      <div class="sidebar-overlay fixed top-0 left-0 w-full hidden h-full z-40 "></div>
+
+    <!-- header end -->
+
+    <!-- home start -->
+
+    <section id="home" class="flex items-center">
+        <div class="container mx-auto mb-10 lg:mb-16 xl:mb-24 sm:mt-24 mt-20 md:mt-28 lg:mt-28 xl:mt-28 w-[85%]">
+            <div class="flex justify-between items-center xl:pt-10">
+                <div class="w-full self-center lg:w-1/2 lg:self-center" data-aos="zoom-in" data-aos-duration="1500">
+                    <h1 class="text-xl font-bold text-black md:text-2xl lg:text-3xl xl:text-[38px] lg:w-[450px] xl:w-[570px] xl:leading-[48px]">Ikuti Tantangan Tak Terlupakan Bersama Kami, di Mana Setiap Kemenangan Berarti!
+                    </h1>
+                    <div class="flex pt-4 xl:pt-6 items-center">
+                        <a href="" class="scale text-[12px] font-semibold text-white bg-primary py-3 px-3 rounded-md mr-4 sm:py-2 sm:text-sm xl:px-4 xl:py-3.5 xl:text-[16px]">Mulai Sekarang</a>
+                        <div class="cursor-pointer">
+                          <div class="flex items-center scale">
+                            <a href="" class="border-primary border-2 text-[12px] py-3 px-3 rounded-md mr-4 sm:py-2 sm:text-sm xl:px-4 xl:py-3 xl:text-[16px]">Lihat Lomba</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block xl:pt-4">
+                  <img src="img/Rectangle 35.svg" alt="" class="xl:w-[580px] rounded-md">
+                </div>
+            </div>
+        </div>
+      </section>  
+
+    <!-- home end -->
+
+    <section id="service" class="md:mb-16 mb-10 xl:mb-16">
+        <div class="container mx-auto md:mt-5 xl:pt-5">
+          <div class="text-center">
+            <h1 class="text-center text-xl font-bold md:text-xl lg:text-2xl xl:text-3xl xl:mb-2">Katogori Lomba</h1>
+            <h1 class="xl:text-lg font-medium">
+                Uji Kemampuan Anda dengan Lomba-lomba yang Ada
+            </h1>
+          </div>
+          <div class="mt-6 flex flex-wrap justify-between gap-8 md:mt-12 sm:flex-wrap sm:gap-6 xl:flex-nowrap lg:justify-center lg:gap-4 xl:justify-between sm:justify-center" data-aos="fade-up" data-aos-duration="1500">
+            <div
+              class="flex flex-col justify-between gap-4 text-white rounded-md bg-primary p-6 sm:w-[47%] lg:w-[31%] xl:w-[25%]">
+              <div class="flex flex-col gap-2">
+                <div class="gap-2">               
+                    <h1 class="font-bold md:text-lg">Fotografi</h1>
+                </div>
+                <p class="text-sm font-medium sm:text-xs md:text-xs lg:text-sm">
+                    Lomba ini mencari momen visual yang menakjubkan dan bermakna, diambil dari perspektif unik para peserta.
+                </p>
+              </div>
+              <button class="scale text-left text-[12px] font-medium text-white md:text-sm">
+                Lihat Lebih Lanjut >
+              </button>
+            </div>
+            <div
+              class="flex flex-col justify-between text-white gap-4 rounded-md bg-primary p-6 sm:w-[47%] lg:w-[31%] xl:w-[25%]">
+              <div class="flex flex-col gap-2">
+                <div class="gap-2">
+                  <h1 class="font-bold md:text-lg">Olahraga</h1>
+                </div>
+                <p class="text-sm font-medium sm:text-xs md:text-xs lg:text-sm">
+                    Lomba ini mencakup berbagai cabang olahraga, menantang peserta untuk menunjukkan Skill yang dimilikinya.
+                </p>
+              </div>
+              <button class="scale text-left text-[12px] font-medium md:text-sm">
+                Lihat Lebih Lanjut >
+              </button>
+            </div>
+            <div
+              class="flex flex-col justify-between text-white gap-4 rounded-md bg-primary p-6 sm:w-[47%] lg:w-[31%] xl:w-[25%]">
+              <div class="flex flex-col gap-2">
+                <div class="gap-2">
+                  <h1 class="font-bold md:text-lg">
+                    eSport
+                  </h1>
+                </div>
+                <p class="text-sm font-medium sm:text-xs md:text-xs lg:text-sm">
+                    Lomba ini menampilkan kompetisi dalam berbagai game elektronik, menguji keterampilan dan strategi pemain dalam game.
+                </p>
+              </div>
+              <button class="scale text-left text-[12px] font-medium md:text-sm">
+                Lihat Lebih Lanjut >
+              </button>
+            </div>
+            <div
+              class="flex flex-col justify-between text-white gap-4 rounded-md bg-primary p-6 sm:w-[47%] lg:w-[31%] xl:w-[25%]">
+              <div class="flex flex-col gap-2">
+                <div class="gap-2">
+                  <h1 class="font-bold md:text-lg">
+                    Desain Grafis
+                  </h1>
+                </div>
+                <p class="text-sm font-medium sm:text-xs md:text-xs lg:text-sm">
+                    Lomba untuk para desainer grafis menunjukkan kreativitas mereka dalam membuat karya visual yang inovatif dan menarik.
+                </p>
+              </div>
+              <button class="scale text-left text-[12px] font-medium md:text-sm">
+                Lihat Lebih Lanjut >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <section id="destinasi" class="md:mb-16 mb-10 xl:mb-16">
+      <div class="container mx-auto md:mt-5 xl:pt-5">
+        <div class="text-center mb-6 xl:mb-10">
+          <h1 class="text-center text-xl font-bold md:text-xl lg:text-2xl xl:text-3xl">Event Lomba Terbaru</h1>
+          <h1 class="xl:text-lg font-medium">
+            Lihat Lomba-Lomba Baru yang Menanti Partisipasi Anda!
+          </h1>
+        </div>
+
+        <div class="swiper mySwiperss">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="mb-4 rounded-xl bg-card hover:bg-white shadow">
+                <div class="overflow-menu p-2">
+                <img src="img/Rectangle 36.svg" alt="" class=" overflow"/>
+                </div>
+                <div class="px-4 pt-4 pb-4 lg:pb-8 xl:pb-3 md:py-2 xl:px-6">
+                  <h1 class="font-semibold text-base md:text-lg mt-3 mb-3 xl:text-sm">Lomba Video Kreatif 60 Detik</h1>
+                  <div class="">
+                    <p class="text-xs">Buat video kreatif berdurasi 60 detik dengan tema bebas. Baik itu solo maupun individu.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mb-4 rounded-2xl bg-card hover:bg-white shadow">
+                <div class="overflow-menu p-2">
+                  <img src="img/Rectangle 39.svg" alt="" class="overflow" />
+                </div>
+                <div class="px-4 pt-4 pb-4 lg:pb-8 xl:pb-3 md:py-2 xl:px-6">
+                  <h1 class="font-semibold text-base md:text-lg mt-3 mb-3 xl:text-sm">Musik</h1>
+                  <div class="">
+                    <p class="text-xs">Lomba ini menampilkan bakat musik dalam berbagai genre, dari penampilan solo hingga grup.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mb-4 rounded-2xl bg-card hover:bg-white shadow">
+                <div class="overflow-menu p-2">
+                  <img src="img/Rectangle 38.svg" alt="" class="overflow" />
+                </div>
+                <div class="px-4 pt-4 lg:pt-2 pb-4 lg:pb-8 xl:pb-3 md:py-2 xl:px-6">
+                  <h1 class="font-semibold text-base md:text-lg mt-3 mb-3 xl:text-sm">Lomba Fortnite</h1>
+                  <div class="">
+                    <p class="text-xs">Tunjukkan keterampilan Anda dalam game Fortnite dan bersaing untuk menjadi pemenang.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mb-4 rounded-2xl bg-card hover:bg-white shadow">
+                <div class="overflow-menu p-2">
+                  <img src="img/Rectangle 37.svg" alt="" class="overflow" />
+                </div>
+                <div class="px-4 pt-4 pb-4 lg:pb-8 xl:pb-3 md:py-2 xl:px-6">
+                  <h1 class="font-semibold text-base md:text-lg mt-3 mb-3 xl:text-sm">Lomba Jurnalistik</h1>
+                  <div class="">
+                    <p class="text-xs">Tulis artikel jurnalistik yang menarik dan informatif. Artikel terbaik akan dipublikasikan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="mx-auto lg::my-10 mt-5 md:my-4 xl:mt-10 xl:mb-8 text-center">
+          <a href="#menu"
+            class="scale text-white bg-primary rounded-md py-3 px-4 text-[12px] font-medium sm:text-xs md:text-sm xl:rounded xl:text-base">Lihat Selengkapnya</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimoni start -->
+
+    <section id="destinasi" class="md:mb-16 mb-10 xl:mb-16">
+      <div class="container mx-auto md:mt-5 xl:pt-5">
+        <div class="text-center mb-6 xl:mb-0">
+          <h1 class="text-center text-xl font-bold md:text-xl lg:text-2xl xl:text-3xl">
+            Tesrimonial Peserta 
+          </h1>
+        </div>
+
+        <div class="swiper mySwiper" data-aos="fade-up">
+          <div class="swiper-wrapper pb-8 py-2 md:mt-10 lg:mt-14 xl:pb-10">
+            <div class="swiper-slide">
+              <div class="flex flex-col bg-card rounded-md 2xl:pb-12 gap-4 p-6 sm:p-6 transition-all duration-300">
+                <div class="flex items-center gap-2">
+                  <div class="flex flex-col gap-1">
+                    <h1 class= "font-semibold text-sm sm:text-sm lg:text-lg">Annisa S.</h1>
+                    <p class="text-xs">Peserta</p>
+                  </div>
+                </div>
+                <p class="font-normal text-xs lg:text-base">"Web lomba ini sangat mudah digunakan dan memudahkan saya untuk mengikuti berbagai kompetisi."</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col bg-card rounded-md gap-4 p-6 sm:p-6 2xl:pb-12">
+                <div class="flex items-center gap-2">
+                  <div class="flex flex-col gap-1">
+                    <h1 class="font-semibold text-sm sm:text-sm lg:text-lg">Budi T.</h1>
+                    <p class="text-xs">Peserta</p>
+                  </div>
+                </div>
+                <p class="font-normal text-xs lg:text-base">"Informasi lomba yang selalu terbaru membuat pengalaman saya sangat baik dan pilihan lomba yang sesuai"
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col bg-card rounded-md gap-4 p-6 sm:p-6">
+                <div class="flex items-center gap-2">
+                  <div class="flex flex-col gap-1">
+                    <h1 class="font-semibold text-sm sm:text-sm lg:text-lg">Clara R.</h1>
+                    <p class="text-xs">Peserta</p>
+                  </div>
+                </div>
+                <p class="font-normal text-xs lg:text-base">"Desain web yang bersih dan sederhana memudahkan saya untuk menemukan dan berpartisipasi dalam lomba."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimoni end -->
+
+    <!-- Cta start -->
+
+    <section id="cta" class="mb-14 md:mb-16 xl:mb-0 xl:py-28">
+      <div class="container mx-auto bg-primary text-white relative flex items-center justify-between rounded-md shadow-lg xl:h-[468px] 2xl:h-[518px]" data-aos="flip-up" data-aos-duration="1500">
+        <div class="mx-auto flex w-[80%] flex-col gap-2 py-6 text-center xl:gap-0 2xl:gap-2 md:text-center">
+          <h1 class="text-sm font-black md:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl xl:mb-4">
+            Temukan Lomba Impian Anda Sekarang!
+          </h1>
+          <p class="text-xs mb-2 md:text-lg lg:text-base xl:text-lg 2xl:text-2xl xl:font-medium xl:mb-6">
+            Raih kesempatan luar biasa dengan berpartisipasi dalam lomba-lomba menarik kami. <br>Jelajahi berbagai kompetisi yang dirancang khusus untuk Anda.
+          </p>
+          <div class="relative items-center">
+            <input type="text" placeholder="enter email" class="h-10 xl:h-12 text-xs xl:text-sm rounded-md text-black px-2 xl:px-4 w-full xl:w-[75%]">
+            <a href="" class="absolute top-2 rounded-md bg-primary xl:py-2 py-1 px-3 text-xs right-2 xl:right-36 2xl:right-52">Subscribe</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTa end -->
+
+    <!-- footer start-->
+
+    <footer class="mt-16 bg-menu">
+      <div class="container mx-auto xl:mt-0">
+        <div class="border border-primary"></div>
+        <div
+          class="flex flex-wrap justify-around gap-8 py-6 text-[6px] xl:py-8 md:justify-between md:text-[10px] lg:text-xs">
+          <div class="flex w-[40%] flex-col justify-between gap-2 font-medium md:w-1/4">
+            <div class="flex flex-col gap-1 md:gap-2 xl:gap-4">
+              <h1 class="mb-2 text-xs font-semibold md:text-base lg:text-2xl lg:font-extrabold">
+                ContestX
+              </h1>
+              <p class="text-[8px] sm:text-[8px] md:text-[8px] xl:text-[14px]">
+                Temukan Dunia Lomba dengan ContestX Untuk informasi lomba terbaru, penawaran eksklusif
+              </p>
+            </div>
+          </div>
+  
+          <div class="flex w-[35%] flex-col gap-1 font-medium md:w-[10%] md:gap-2 xl:gap-4">
+            <h1 class="mb-2 text-xs font-semibold md:text-sm lg:text-xl lg:font-bold">
+              Link
+            </h1>
+            <div class="flex flex-col gap-2 text-[7px] md:text-[9px] lg:text-sm">
+              <p class="">Beranda</p>
+              <p class="">Kategori Lomba</p>
+              <p class="">Lomba Terbaru</p>
+              <p class="">Testimoni</p>
+            </div>
+          </div>
+  
+          <div class="flex w-[35%] flex-col gap-1 font-medium md:w-[15%] md:gap-2 xl:gap-4">
+            <h1 class="mb-2 text-xs font-semibold md:text-sm lg:text-xl lg:font-bold">
+              Kontak
+            </h1>
+            <div class="flex flex-col gap-2 text-[7px] md:text-[9px] lg:text-sm">
+              <p class="">ContestX@gmail.com</p>
+              <p class="">+(62) 821-4785-9832</p>
+              <p class="">Denpasar, Bali, Indonesia</p>
+            </div>
+          </div>
+  
+          <div
+            class="mb-8 flex h-[15vh] w-[35%] flex-col gap-1 font-medium md:h-[13vh] md:w-[15%] md:gap-2 lg:h-[25vh] xl:gap-4">
+            <h1 class="mb-2 text-xs font-semibold md:text-sm lg:text-xl lg:font-bold">
+              Map
+            </h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.569034968726!2d115.20953507359629!3d-8.637304687818217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f427c827f27%3A0x232bc099d3a1d1b4!2sDharma%20Alaya%20Lumintang!5e0!3m2!1sid!2sid!4v1703779090661!5m2!1sid!2sid"
+              class="h-full w-full rounded-md shadow-md"></iframe>
+          </div>
+        </div>
+        <h1 class="border-t-2 border-[#292929] border-opacity-60 py-4 lg:py-6 text-center text-[8px] sm:w-full md:text-[10px] xl:text-xs">
+            © 2024 ContestX | All right reserved
+        </h1>
+      </div>
+    </footer>
+  
+
+    <!-- footer end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

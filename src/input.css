@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+.swiper-pagination .swiper-pagination-bullet{
+  background-color: #197FC8;
+}
+  
+.swiper-scrollbar .swiper-scrollbar-drag{
+  background-color: black;
+  }
+  
+.container{
+    width: 88%;
+}
+
+  
+.nav-class{
+    @apply  mx-auto sm:mx-3 lg:mx-4 w-fit flex items-center justify-center py-4 group-hover:text-primary z-50 md:text-black relative before:absolute before:bottom-0 before:h-[3px] before:w-0 before:bg-primary before:transition-all group-hover:before:w-full;
+  }
+  
+
+  .scale{
+    @apply transition-all duration-300 hover:scale-105 active:scale-105 brightness-95 ;
+  }
+  
+  .scale-group{
+    @apply transition-all duration-300 group-hover:scale-105 group-active:scale-105 group-hover:brightness-95;
+  }
+  
+  .overflow{
+    @apply overflow-hidden rounded-xl bg-white;
+  }
+  
+  .overflow-gal{
+    @apply overflow-hidden rounded md:rounded-md xl:rounded-xl;
+  }
+  
+  .img-menu{
+    @apply h-full w-full object-cover rounded transition-transform duration-300 hover:scale-110 md:rounded-md xl:rounded-xl;
+  }
+  
+  .img-gallery{
+    @apply h-full w-full object-cover rounded md:rounded-md xl:rounded-xl transition-transform duration-300 hover:scale-110;
+  }
+  
+  .service-box{
+    @apply w-[35%] sm:w-[18%];
+  }
+  
+  .bg-black-50{
+    @apply bg-black/50
+  }
