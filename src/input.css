@@ -8,7 +8,7 @@ body {
 }
 
 .swiper-pagination .swiper-pagination-bullet{
-  background-color: #197FC8;
+  @apply bg-primary
 }
   
 .swiper-scrollbar .swiper-scrollbar-drag{
